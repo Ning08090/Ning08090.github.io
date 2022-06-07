@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{ color: #d0011b; 
+            text-align: center;
+            line-height: 1;
+            font-family: Helvetica Neue,Helvetica,Arial,文泉驛正黑,WenQuanYi Zen Hei,Hiragino Sans GB,儷黑 Pro,LiHei Pro,Heiti TC,微軟正黑體,Microsoft JhengHei UI,Microsoft JhengHei,sans-serif;;
+        }
+        a{text-decoration: none;}
+        .item-group{
+            width: 1200px;
+            margin: auto;
+            flex-wrap: wrap;
+            display: flex;
+            border: 1px solid #d8d8d8;
+        }
+        .banner{
+            width: 1160px;
+            padding:20px;
+            height: 20px;
+            flex-wrap: wrap;
+            display: flex;
+            position: relative;
+        }
+        .banner-logo{
+            font-size: 17px;
+            position: relative;
+            top:2px;
+        }
+        .banner-block{
+            width: 980px;
+            height: 100%;
+            display: flex;
+            margin: 0px 15px;
+            border-left: 1px solid #d8d8d8;
+            position: relative;
+        }
+        .banner-block-item{
+            display: flex;
+            margin: 0px 0px 0px 15px;
+        }
+        .banner-block img{
+            size: 17px;
+            padding: 0px 6px;
+        }
+        .banner-block p{
+            font-size: 14px;
+            color:#333333;
+            margin: 4px 0px;    
+        }
+        .banner-more{
+            font-size: 14px;
+            display: flex;
+            position: absolute;
+            right: 10px;
+            top:21px;
+        }
+        .banner-more p{
+            line-height: 1;
+            position: relative;
+            right: 5px;
+            bottom: 12px;
+        }
+        .banner-more-icon{
+            width: 18px;
+            height: 18px;
+            border-radius:50%;
+            background-color: #d0011b;
+        }
+
+        .shopee-svg-icon{
+            width: 0.5rem;
+            background-size:cover;
+            stroke:white;
+            position: absolute;
+            top: 5px; 
+            right: 4px;
+        }
+        .icon-arrow-right path{
+            /* width: 0.5rem; */
+            background-size:cover;
+
+        }
+
+        .item-ad{
+            width: 380px;
+            padding: 10px;
+        }
+        .item-ad img{
+            size: 100%;
+        }
+        .item-list{
+            width: 800px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .item{
+            width: 180px;
+            padding: 10px;
+            position: relative;
+        }
+        .item img{
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+        }
+        .item p{
+            position: relative;
+            bottom: 25px;
+            font-size: 18px;
+            line-height: 1px;
+            margin: 0;          
+        }
+     
+    </style>
+</head>
+<body>
+    <div class="item-group">
+        <div class="banner">
+            <div class="banner-logo">
+                <a  href="https://shopee.tw/mall">蝦皮商城</a>
+
+            </div>
+
+            <div class="banner-block">
+                <div class="banner-block-item">
+                    <img src="./shopee/back.png" alt="">
+                    <p>15天鑑賞期</p>
+                </div>
+                <div class="banner-block-item">
+                    <img src="./shopee/cart.png" alt="">
+                    <p>蝦皮安心退</p>
+                </div>
+                <div class="banner-block-item">
+                    <img src="./shopee/promise.png" alt="">
+                    <p>正品保障</p>
+                </div>
+            </div>
+            <a class="banner-more"href="https://shopee.tw/mall">
+                <p>查看全部</p>
+                <div class="banner-more-icon">
+                    <svg enable-background="new 0 0 11 11" viewBox="0 0 11 11" x="0" y="0" class="shopee-svg-icon icon-arrow-right">
+                        <path d="m2.5 11c .1 0 .2 0 .3-.1l6-5c .1-.1.2-.3.2-.4s-.1-.3-.2-.4l-6-5c-.2-.2-.5-.1-.7.1s-.1.5.1.7l5.5 4.6-5.5 4.6c-.2.2-.2.5-.1.7.1.1.3.2.4.2z"></path>
+                    </svg>
+                </div>
+                
+        </div>
+
+        <aside class="item-ad">
+            <a href="https://shopee.tw/m/AMART2022JUN06DAY">
+                <img src="./shopee/left.png" alt="">
+            </a>
+        </aside>
+
+        <main class="item-list">
+            <div class="item">
+                <a href="#">
+                    <img src="./shopee/2.jpg" alt="全館5折up">
+                </a>
+                <p>全館5折up</p>
+            </div>
+            <div class="item">
+                <a href="">
+                    <img src="./shopee/2-2.png" alt="滿$299折$50">                 
+                </a>
+                <p>滿$299折$50</p>
+            </div>
+            <div class="item">
+                <a href="">
+                    <img src="./shopee/2-3.jpg" alt="全館47折up">
+                </a>
+                <p>全館47折up</p>
+            </div>
+            <div class="item">
+                <a href="">
+                    <img src="./shopee/2-4.png" alt="國際書展領券85折">
+                </a>
+                <p>國際書展領券85折</p>
+            </div>
+            <div class="item">
+                <a href="">
+                    <img src="./shopee/2-5.png" alt="最強3C領券再折">
+                </a>
+                <p>最強3C領券再折</p>
+            </div>
+            <div class="item">
+                <a href="">
+                    <img src="./shopee/2-6.jpg" alt="蝦幣最高30倍送">
+                </a>
+                <p>蝦幣最高30倍送</p>
+            </div>
+            <div class="item">
+                <a href="">
+                    <img src="./shopee/2-7.jpg" alt="全店超商99免運">
+                </a>
+                <p>全店超商99免運</p>
+            </div>
+            <div class="item">
+                <a href="">
+                    <img src="./shopee/2-8.jpg" alt="盛大進駐關注領券">
+                </a>
+                <p>盛大進駐關注領券</p>
+            </div>
+               
+        </main>
+
+
+
+    </div>
+  
+
+
+</body>
+</html>
