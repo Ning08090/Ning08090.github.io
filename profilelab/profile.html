@@ -71,27 +71,21 @@
 
 <script>
 
-        const mainpic = "https://github.com/Ning0809/Ning0809.github.io/blob/main/profilelab/%E4%B8%8D%E4%BA%8C%E9%A6%AC%E9%BC%A0.jpg?raw=true";
-
+        const mainpic = "https://github.com/Ning0809/Ning0809.github.io/blob/main/%E4%B8%8D%E4%BA%8C%E9%A6%AC%E9%BC%A0.jpg?raw=true";
         let image = document.getElementById("profile");
         image.setAttribute("src",mainpic);
-
-
-
         let person ={
             name : "寧寧",
             email: "ning@gmail.com",
             school:"Build School",
             habbits:"DOG"
         }
-
-        const imageArray =[
+         const imageArray =[
             "https://cf.shopee.tw/file/a81b2a5a998980c5a52276a153734cf6_tn", 
             "https://cf.shopee.tw/file/3036083b0288bc600036d4d6cfdd6535",
             "https://cf.shopee.tw/file/beb0bac702258c690be684bd3e925322"
             
         ];
-
 
         let name = document.getElementById("name");
         name.innerText = `NAME: ${person.name}`;
@@ -101,7 +95,6 @@
         school.innerText = `SCHOOL: ${person.school}`;
         let habbit = document.getElementById("habbit");
         habbit.innerText = `HABBITS: ${person.habbits}`;
-
 
         let imgarray1 = document.getElementById("img1");
         imgarray1.setAttribute("src",imageArray[0]);
